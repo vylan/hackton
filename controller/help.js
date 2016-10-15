@@ -51,7 +51,6 @@ exports.getStatus = function(req, res) {
         },
         cancel: false
     };
-    //获取最新的纪录，并且把help表中的数据一起返回
     db.Sos.queryByConditions(conditons, function(err, results) {
         if (err) {
             console.log(err)

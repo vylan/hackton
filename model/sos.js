@@ -12,6 +12,10 @@ var SosSchema = new mongoose.Schema({
         type: Boolean,
         default: false
     },
+    type: {
+        type:String,
+        default:'sos'
+    },
     meta: {
         createAt: {
             type: Date,
